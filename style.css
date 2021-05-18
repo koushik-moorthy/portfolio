@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding: 100px;
+}
+
+.banner {
+  position: relative;
+  min-height: 100vh;
+  background: url(./assets/img/banner.jpg);
+  background-size: cover;
+  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner h2 {
+  font-size: 3em;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+.banner h2 span {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.banner h3 {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 30px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-left: 100px;
+}
+
+.btn-download {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header ul {
+  position: relative;
+  display: flex;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentBx h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.contentBx p {
+  font-size: 25px;
+}
+
+.contentBx {
+  margin-right: 30px;
+}
+
+header.sticky {
+  background: #fff;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo {
+  color: #111;
+}
+
+header.sticky ul li a {
+  color: #111;
+}
+
+.projects {
+  background: #f7f7f7;
+}
+
+.projects .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projects .content .projectsBx {
+  min-width: 50%;
+  padding: 10px 20px;
+  margin: 20px;
+}
+
+.projectsBx p {
+  font-size: 20px;
+}
+
+.fa {
+  margin-left: 50px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contentIc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  background-color: #101010;
+}
+
+.footer .heading {
+  color: #f7f7f7;
+}
+
+.btn-prj {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 10px;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.btn-prj-live {
+  position: relative;
+  background: #2196f3;
+  display: inline-block;
+  color: #fff;
+  margin-top: 20px;
+  padding: 10px 10px;
+  font-size: 18px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.textBx {
+  margin-left: 500px;
+}
+
+.desc {
+  margin-left: 80px;
+  margin-top: 10px;
+}
+
+header.sticky ul li a {
+  color: #000;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #a7a1a1;
+}
+
+.fa {
+  color: #f7f7f7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 80px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 12px;
+  margin-bottom: 12px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+a:hover {
+  color: #2196f3 !important;
+}
+
+.hover-effect:hover {
+  color: #000 !important;
+}
