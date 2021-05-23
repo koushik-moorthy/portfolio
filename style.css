@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +10,20 @@ section {
   padding: 100px;
 }
 
+.hamburger {
+  background-color: transparent;
+  font-size: 20px;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger:focus {
+  outline: none;
+}
+
+
 .banner {
   position: relative;
   min-height: 100vh;
@@ -18,7 +31,7 @@ section {
   background-size: cover;
   background-position: right;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -51,10 +64,10 @@ section {
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
-  margin-left: 100px;
 }
 
 .btn-download {
+  margin-top: 30px !important;
   position: relative;
   background: #2196f3;
   display: inline-block;
@@ -72,9 +85,10 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 20px 40px !important;
   z-index: 1000;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -96,6 +110,10 @@ header ul {
 header ul li {
   position: relative;
   list-style: none;
+}
+
+.prj-abt {
+  color: rgb(165, 163, 163);
 }
 
 header ul li a {
@@ -123,8 +141,10 @@ header ul li a {
   margin-bottom: 10px;
 }
 
-.contentBx p {
-  font-size: 25px;
+.abt-descr {
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 30px !important;
 }
 
 .contentBx {
@@ -143,6 +163,9 @@ header.sticky .logo {
 
 header.sticky ul li a {
   color: #111;
+}
+header.sticky ul li a:hover{
+  color: #2196f3 !important;
 }
 
 .projects {
@@ -173,6 +196,7 @@ header.sticky ul li a {
 }
 
 .contentIc {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,21 +235,24 @@ header.sticky ul li a {
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 500;
-  border-radius: 10px;
   margin-left: 10px;
-}
-
-.textBx {
-  margin-left: 500px;
+  border-radius: 10px;
 }
 
 .desc {
-  margin-left: 80px;
   margin-top: 10px;
+  display: flex;
+  justify-content: center;
 }
 
-header.sticky ul li a {
-  color: #000;
+.thirdline {
+  display: flex;
+  justify-content: center;
+}
+
+header.sticky ul li a,
+header.sticky .hamburger {
+  color: #000 !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -242,7 +269,10 @@ header.sticky ul li a {
   background-color: #a7a1a1;
 }
 
-.fa {
+.fa-fb,
+.fa-ig,
+.fa-gh,
+.fa-lk {
   color: #f7f7f7;
 }
 
@@ -254,6 +284,11 @@ html {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
+}
+
+.img-boy {
+  width: auto;
+  height: auto;
 }
 
 .tooltip .tooltiptext {
@@ -284,4 +319,115 @@ a:hover {
 
 .hover-effect:hover {
   color: #000 !important;
+}
+
+.contactme {
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.fa-facebook {
+  margin: 0;
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  .textBx,
+  .desc,
+  .abt-btn {
+    width: 100%;
+    margin: auto;
+  }
+  .abt-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .about {
+    padding: 40px;
+    text-align: justify;
+  }
+  .contentBx {
+    margin: 0;
+  }
+  .contentBx p {
+    font-size: 16px;
+  }
+  .content {
+    display: block;
+  }
+
+  .btn-download {
+    margin: auto;
+    margin-left: 40px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .projects {
+    padding: 40px;
+  }
+  .heading {
+    margin: auto;
+  }
+
+  .btn-prj-live {
+    margin-left: 0;
+  }
+
+  a {
+    border-radius: 0 !important;
+  }
+
+  .prj-descr {
+    margin-top: 10px;
+    font-size: 16px !important;
+    text-align: justify;
+  }
+
+  .prj-abt {
+    font-size: 14px;
+    color: rgb(165, 163, 163);
+  }
+
+  .projectsBx {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: 40px !important;
+  }
+  .fa-facebook {
+    margin: 0;
+  }
+  .secondline {
+    margin-top: 10px;
+  }
+
+  .nav-ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: space-between; */
+    /* flex: 1 1 auto; */
+    margin-top: 20px;
+  }
+  li {
+    margin-top: 10px;
+  }
+
+  .hamburger {
+    display: block !important;
+  }
+
+  .nav-ul.show {
+    display: flex;
+  }
 }
