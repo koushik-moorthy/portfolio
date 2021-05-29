@@ -9,3 +9,8 @@ var navUL = document.getElementById("nav-ul");
 hamburger.addEventListener('click',()=>{
 	navUL.classList.toggle('show');
 });
+
+
+$(window).on("load",function(){
+	$(".loader-wrapper").fadeOut("slow");
+});
