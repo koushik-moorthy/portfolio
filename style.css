@@ -27,8 +27,7 @@ section {
 .banner {
   position: relative;
   min-height: 100vh;
-  background: url(./assets/img/banner.jpg);
-  background-size: cover;
+  background: #171717;
   background-position: right;
   display: flex;
   justify-content: center;
